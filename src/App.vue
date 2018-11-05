@@ -135,6 +135,13 @@
         },
         created() {
             this.initInstallApp();
+        },
+        mounted() {
+            const self = this;
+            window.onblur = function() {
+                self.isPlaying = false;
+                clearInterval(self.refreshIntervalId);
+            }
         }
     }
 </script>
