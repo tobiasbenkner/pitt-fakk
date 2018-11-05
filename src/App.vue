@@ -85,7 +85,7 @@
         data: () => ({
             bpm: 80,
             isPlaying: false,
-            audio: new Audio('/metronome.wav'),
+            audio: new Audio(require('./assets/metronome.wav')),
             refreshIntervalId: null
         }),
         watch: {
