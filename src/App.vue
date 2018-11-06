@@ -50,6 +50,8 @@
                             min="20"
                             max="120">
                         <v-icon
+                                large
+                                class="icon-minus"
                                 slot="prepend"
                                 :color="color"
                                 @click="decrement">
@@ -57,6 +59,8 @@
                         </v-icon>
 
                         <v-icon
+                                large
+                                class="icon-plus"
                                 slot="append"
                                 :color="color"
                                 @click="increment">
@@ -162,4 +166,22 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
+
+    .v-slider__thumb {
+        width: 36px !important;
+        height: 36px !important;
+        left: -18px !important;
+    }
+    .v-slider {
+        height: 42px !important;
+    }
+
+    .icon-minus {
+        margin-right: 10px;
+    }
+
+    .icon-plus {
+        margin-left: 10px;
+    }
+
 </style>
