@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/pitt-force/precache-manifest.cfc0ca34bc7a3560165ac7796a94e3e5.js"
+  "/pitt-fakk/precache-manifest.446319817bb855af1ac2af8dea5b2d3c.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vuejs_pwa"});
