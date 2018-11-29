@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/pitt-force/js/app.dcb5c983.js"
   },
   {
-    "revision": "3f9873951286c5dab8b47668ed17f732",
+    "revision": "bea0daa8d330898c0f0c0675fae6be19",
     "url": "/pitt-force/index.html"
   },
   {
