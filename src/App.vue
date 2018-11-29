@@ -6,30 +6,20 @@
                     max-width="600">
                 <v-toolbar card dense>
                     <v-toolbar-title>
-                        <span class="subheading">P.I.T.T.-FORCE</span>
+                        <span class="subheading">PITT-FAKK</span>
                     </v-toolbar-title>
-                    <!--<v-spacer></v-spacer>-->
-                    <!--<v-btn icon>-->
-                    <!--<v-icon>share</v-icon>-->
-                    <!--</v-btn>-->
                 </v-toolbar>
 
                 <v-card-text>
                     <v-layout justify-space-between mb-3>
-                        <v-flex text-xs-left>
+                        <v-flex text-xs-left xs5>
                             <span class="display-3 font-weight-light" v-text="bpm"></span>
                             <span class="subheading font-weight-light mr-1">BPM</span>
-                            <v-fade-transition>
-                                <v-avatar
-                                        v-if="isPlaying"
-                                        :color="color"
-                                        :style="{ animationDuration: animationDuration }"
-                                        class="mb-1 v-avatar--metronome"
-                                        size="12">
-                                </v-avatar>
-                            </v-fade-transition>
                         </v-flex>
-                        <v-flex text-xs-right>
+                        <v-flex xs2 text-xs-center>
+                            <img width="90px" src="img/pitt-bodybuilding-bizeps.png">
+                        </v-flex>
+                        <v-flex text-xs-right xs5>
                             <v-btn
                                     :color="color"
                                     dark
@@ -73,6 +63,7 @@
             <div v-if="deferredPrompt" style="margin-top: 10px" class="text-xs-right">
                 <v-btn v-on:click.native="installApp" :color="color">Install App</v-btn>
             </div>
+
         </main>
     </v-app>
 </template>
@@ -101,9 +92,6 @@
             color() {
                 return 'red'
             },
-            animationDuration() {
-                return `${60 / this.bpm}s`
-            }
         },
         methods: {
             decrement() {
